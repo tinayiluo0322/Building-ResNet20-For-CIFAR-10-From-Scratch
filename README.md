@@ -19,14 +19,17 @@ Following the Original ["Deep Residual Learning for Image Recognition"](https://
 |----------------|----------------|-------------|
 | **Input**      | 32 × 32 × 3     | Raw CIFAR-10 image |
 | **Conv1**      | 32 × 32 × 16    | 3 × 3, 16 filters, stride 1 |
-| **Conv2_x**    | 32 × 32 × 16    | 3 residual blocks, each with two 3 × 3 convolutions |
+| **Conv2_x**    | 32 × 32 × 16    | 3 residual blocks, each with two 3 × 3 convolutions, stride 1|
 | **Conv3_x**    | 16 × 16 × 32    | 3 residual blocks, each with two 3 × 3 convolutions (first block subsamples with stride 2) |
 | **Conv4_x**    | 8 × 8 × 64      | 3 residual blocks, each with two 3 × 3 convolutions (first block subsamples with stride 2) |
 | **Global Avg Pool** | 1 × 1 × 64 | Pooling over entire feature map |
 | **Fully Connected (FC)** | 10 | Output class predictions |
 
 ### Residual Blocks Details 
-Reference: [DIVE INTO DEEP LEARNING](https://d2l.ai/chapter_convolutional-modern/resnet.html)
+##### Reference: [DIVE INTO DEEP LEARNING](https://d2l.ai/chapter_convolutional-modern/resnet.html)
+
+<img width="586" alt="Image" src="https://github.com/user-attachments/assets/d336f0d9-1776-48b5-a691-a3f104ac7673" />
+
 ---
 
 ## **Step 2: Implement the Model**
