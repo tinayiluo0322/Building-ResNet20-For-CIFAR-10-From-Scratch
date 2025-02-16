@@ -86,17 +86,18 @@ Following the Original ["Deep Residual Learning for Image Recognition"](https://
 - **Learning rate starts at 0.1**, decays at **32k and 48k iterations**.
 - **Best validation accuracy achieved:** **> 90% within 200 epochs**.
 - Model is **saved during training** if validation accuracy improves.
+- **Best training model is saved in** `/resnet20_CIFAR10_results/predictions.csv`
 
 ---
 
 ## **Step 7: Generating Test Set Predictions**
 - **Test set is held out (no labels available).**
-- **Predictions are stored in** `predictions.csv` **following the required format**:
+- **Predictions are stored in** `/resnet20_CIFAR10_results/predictions.csv` **following the required format**:
   ```
   Id,Label
-  0,3
-  1,8
-  2,1
+  0,2
+  1,3
+  2,5
   ...
   ```
 ---
